@@ -1,0 +1,87 @@
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+/* Theme transition styles */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Base styles for better color contrast */
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+  }
+  
+  /* Dark mode styles */
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+/* Custom responsive utilities using CSS custom properties */
+@layer utilities {
+  /* Responsive text sizes */
+  .responsive-heading {
+    font-size: var(--text-4xl);
+    color: inherit; /* Ensures it inherits parent color */
+    @media (width >= 640px) {
+      font-size: var(--text-5xl);
+    }
+    @media (width >= 768px) {
+      font-size: var(--text-6xl);
+    }
+    @media (width >= 1024px) {
+      font-size: var(--text-7xl);
+    }
+  }
+  
+  /* Fluid spacing */
+  .fluid-padding {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+    @media (width >= 640px) {
+      padding-left: var(--spacing-6);
+      padding-right: var(--spacing-6);
+    }
+    @media (width >= 768px) {
+      padding-left: var(--spacing-8);
+      padding-right: var(--spacing-8);
+    }
+    @media (width >= 1024px) {
+      padding-left: var(--spacing-12);
+      padding-right: var(--spacing-12);
+    }
+  }
+  
+  /* Responsive grid */
+  .responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @media (width >= 640px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (width >= 1024px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media (width >= 1280px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  
+  /* Hide scrollbar on mobile */
+  @media (max-width: 640px) {
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+/* Your additional custom styles below */

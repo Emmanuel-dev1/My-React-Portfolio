@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- THEME META TAGS - CRITICAL -->
+    <meta name="theme-color" content="#ffffff" id="theme-color-meta">
+    <meta name="color-scheme" content="light dark">
+    
+    <title>Vite+React Portfolio</title>
+    
+    <!-- Script to update theme meta on load -->
+    <script>
+      // Check theme on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        
+        document.documentElement.className = theme;
+        
+        // Update theme-color meta tag
+        const metaThemeColor = document.querySelector('#theme-color-meta');
+        if (metaThemeColor) {
+          metaThemeColor.setAttribute('content', theme === 'dark' ? '#111827' : '#ffffff');
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
