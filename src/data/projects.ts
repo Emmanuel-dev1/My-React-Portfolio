@@ -29,11 +29,12 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Task Management System',
-    description: 'Collaborative task management tool with drag-drop interface, team assignments, and progress tracking.',
-    technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
-    githubUrl: 'https://github.com/username/task-manager',
-    featured: false,
+    title: "Church Management System",
+    description: "Comprehensive solution for managing church activities and member information.",
+    technologies: ["CSS", "JavaScript", "HTML"],
+    githubUrl: "https://github.com/Emmanuel-dev1/Church-Management",
+    liveUrl: "https://emmanuel-dev1.github.io/Church-Management/",
+    featured: true,
   },
   {
     id: 4,

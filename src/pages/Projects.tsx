@@ -79,7 +79,7 @@ export default function Projects() {
       <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="text-center p-6 bg-[#f9fafb] dark:bg-[#1f2937] rounded-xl">
           <div className="text-3xl font-bold text-[#3b82f6] dark:text-[#60a5fa] mb-2">
-            {projects.length}+
+            15+
           </div>
           <div className="text-[#6b7280] dark:text-[#d1d5db]">Projects Completed</div>
         </div>

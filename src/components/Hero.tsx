@@ -28,7 +28,7 @@ export default function Hero() {
               </Link>
               <Link
                 to="/contact"
-                className="border border-gray-300 dark:border-gray-700 hover:border-blue-500 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-semibold transition-colors"
+                className="border border-gray-300 dark:border-gray-700 hover:border-blue-500 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-full font-semibold transition-colors"
               >
                 Get in Touch
               </Link>

@@ -22,7 +22,7 @@ export default function About() {
       // Create a temporary link
       const link = document.createElement('a');
       link.href = cvPath2; // Try the direct path first
-      link.download = 'Emmanuel_Software_Engineer_CV.pdf'; // Custom filename for download
+      link.download = 'Emmanuel_Owusu_Jnr_CV.pdf'; // Custom filename for download
       link.target = '_blank'; // Open in new tab
       link.rel = 'noopener noreferrer';
       
@@ -70,7 +70,7 @@ export default function About() {
               My Journey
             </h2>
             <p className="text-[#6b7280] dark:text-[#d1d5db] mb-4">
-              Hello! I'm a passionate full-stack developer with {new Date().getFullYear() - 2018}+ years of experience building web applications. My journey started with a curiosity about how websites work, which evolved into a career creating digital solutions.
+              Hello! I'm a passionate frontend developer with {new Date().getFullYear() - 2023}+ years of experience building web applications. My journey started with a curiosity about how websites work, which evolved into a career creating digital solutions.
             </p>
             <p className="text-[#6b7280] dark:text-[#d1d5db] mb-4">
               I specialize in React, TypeScript, and modern web technologies. I believe in writing clean, maintainable code and creating user experiences that are both beautiful and functional.
@@ -135,7 +135,7 @@ export default function About() {
           <div className="mt-12 grid grid-cols-2 gap-6">
             <div className="text-center p-4 bg-[#f9fafb] dark:bg-[#1f2937] rounded-lg">
               <div className="text-2xl font-bold text-[#3b82f6] dark:text-[#60a5fa]">
-                {new Date().getFullYear() - 2018}+
+                {new Date().getFullYear() - 2023}+
               </div>
               <div className="text-sm text-[#6b7280] dark:text-[#9ca3af] mt-1">
                 Years Experience
@@ -143,7 +143,7 @@ export default function About() {
             </div>
             <div className="text-center p-4 bg-[#f9fafb] dark:bg-[#1f2937] rounded-lg">
               <div className="text-2xl font-bold text-[#10b981] dark:text-[#34d399]">
-                50+
+                15+
               </div>
               <div className="text-sm text-[#6b7280] dark:text-[#9ca3af] mt-1">
                 Projects Delivered
